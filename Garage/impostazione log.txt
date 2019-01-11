@@ -1,0 +1,8 @@
+ora, azione, targa eventuale veicolo, tipo veicolo.
+	   , (se uscito) ora uscita, targa eventuale veicolo, tipo veicolo.
+
+
+altre richieste:
+	(bottone che mostra una "tabella risultati analisi del log")
+	conteggio per ogni tipo di veicolo
+	durata media parcheggio generale e per ogni tipo del veicolo

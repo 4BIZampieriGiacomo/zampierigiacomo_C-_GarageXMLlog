@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Garage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <arrVeicoli>
+    <Veicolo xsi:type="Auto">
+      <Targa>a</Targa>
+      <OraIngresso>1</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>ey</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>e2</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>ee</Targa>
+      <OraIngresso>3</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:type="Auto">
+      <Targa>55</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>66</Targa>
+      <OraIngresso>3</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>77</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>88</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>99</Targa>
+      <OraIngresso>2</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Furgone">
+      <Targa>321</Targa>
+      <OraIngresso>2</OraIngresso>
+      <Lunghezza>32</Lunghezza>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>et</Targa>
+      <OraIngresso>14</OraIngresso>
+      <IsElettrica>false</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Auto">
+      <Targa>123</Targa>
+      <OraIngresso>3</OraIngresso>
+      <IsElettrica>true</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Moto">
+      <Targa>3222</Targa>
+      <OraIngresso>9</OraIngresso>
+      <Cilindrata>500</Cilindrata>
+    </Veicolo>
+    <Veicolo xsi:type="Moto">
+      <Targa>876</Targa>
+      <OraIngresso>6</OraIngresso>
+      <Cilindrata>250</Cilindrata>
+    </Veicolo>
+    <Veicolo xsi:type="Furgone">
+      <Targa>76543</Targa>
+      <OraIngresso>5</OraIngresso>
+      <Lunghezza>235</Lunghezza>
+    </Veicolo>
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+  </arrVeicoli>
+  <nVeicoli>19</nVeicoli>
+  <TariffaAuto>5</TariffaAuto>
+  <TariffaFurgoni>7</TariffaFurgoni>
+  <TariffaMoto>3</TariffaMoto>
+</Garage>

@@ -1,0 +1,63 @@
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.Form1.resources
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+D:\progetti c#\4°\Garage\Garage\bin\Debug\Garage.exe.config
+D:\progetti c#\4°\Garage\Garage\bin\Debug\Garage.exe
+D:\progetti c#\4°\Garage\Garage\bin\Debug\Garage.pdb
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.exe
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.pdb
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+D:\progetti c#\4°\Garage\Garage\obj\Debug\Garage.Form2.resources
+D:\progetti c#\4°\Garage.2\Garage\Garage\bin\Debug\Garage.exe.config
+D:\progetti c#\4°\Garage.2\Garage\Garage\bin\Debug\Garage.exe
+D:\progetti c#\4°\Garage.2\Garage\Garage\bin\Debug\Garage.pdb
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.Form1.resources
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.Form2.resources
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.exe
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.pdb
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.Form3.resources
+D:\progetti c#\4°\Garage.2\Garage\Garage\obj\Debug\Garage.Form4.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\bin\Debug\Garage.exe.config
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\bin\Debug\Garage.exe
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\bin\Debug\Garage.pdb
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.Form1.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.Form2.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.Form3.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.Form4.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.exe
+D:\progetti c#\4°\Garage\Garage.2\Garage\Garage\obj\Debug\Garage.pdb
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.exe.config
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.exe
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.pdb
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form1.resources
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form2.resources
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form3.resources
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form4.resources
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.exe
+C:\Users\utente\Desktop\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.pdb
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.exe.config
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.exe
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\bin\Debug\Garage.pdb
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form1.resources
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form2.resources
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form3.resources
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Form4.resources
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.exe
+D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.pdb
