@@ -92,6 +92,10 @@ namespace Garage
                             genitore.Garagee.nVeicoli++;
                             genitore.AggiornaMessaggio(5);
                             finito = true;
+                            string tipoAzione = "EntrataFurgone";
+                            //...,EntrataFurgone,Lunghezza,targa,ora ingresso
+                            string azione = f.Lunghezza + "," + f.Targa + "," + f.OraIngresso;
+                            genitore.Garagee.AggiornaLog(tipoAzione, azione);
                             this.Close();                        }
                         else if (genitore.Garagee.arrVeicoli[i] == null)
                         {
@@ -141,6 +145,10 @@ namespace Garage
                             genitore.Garagee.nVeicoli++;
                             genitore.AggiornaMessaggio(6);
                             finito = true;
+                            string tipoAzione = "EntrataMoto";
+                            //...,EntrataFurgone,Lunghezza,targa,ora ingresso
+                            string azione = m.Cilindrata + "," + m.Targa + "," + m.OraIngresso;
+                            genitore.Garagee.AggiornaLog(tipoAzione, azione);
                             this.Close();                        }
                         else if (genitore.Garagee.arrVeicoli[i] == null)
                         {
@@ -184,10 +192,19 @@ namespace Garage
                     }
                     else
                     {
+                        string tipoAzione = "UscitaVeicolo";
+                        //...,UscitaVeicolo,tipoVeicolo,targa,oraIngresso,oraUscita,soldiDaPagare
+                        string spezzoneAzioneLog = (
+                            genitore.Garagee.arrVeicoli[pos] is Auto ? "Auto" + (
+                            (genitore.Garagee.arrVeicoli[pos] as Auto).IsElettrica == true ? "Elettrica" : "NonElettrica") :
+                            genitore.Garagee.arrVeicoli[pos] is Furgone ? "Furgone" : "Moto") + "," + genitore.Garagee.arrVeicoli[pos].Targa + 
+                            "," + genitore.Garagee.arrVeicoli[pos].OraIngresso;
                         genitore.SoldiDaPagare = genitore.Garagee.EsceVeicolo(pos, ora);
                         genitore.Garagee.nVeicoli--;
                         genitore.RimuoviImm(pos);
                         genitore.AggiornaMessaggio(1);
+                        string azione =  spezzoneAzioneLog + "," + ora + "," + genitore.SoldiDaPagare;
+                        genitore.Garagee.AggiornaLog(tipoAzione, azione);
                         this.Close();
                     }
                 }

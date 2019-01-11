@@ -65,7 +65,7 @@ namespace Garage
                         finito = true;
                         string tipoAzione = "EntrataAuto";
                         //...,EntrataAuto,è/non è elettrica,targa,ora ingresso
-                        string azione = a.IsElettrica.ToString() + "," + a.Targa + "," + a.OraIngresso;
+                        string azione = (a.IsElettrica == true ? "Elettrica" : "NonElettrica") + "," + a.Targa + "," + a.OraIngresso;
                         genitore.Garagee.AggiornaLog(tipoAzione, azione);
                         this.Close();
                     }

@@ -61,3 +61,16 @@ D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garag
 D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
 D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.exe
 D:\progetti c#\4°\Garagee\Garage 3.0\Garage_Zampieri_4°BI\Garage1\Garage\Garage\obj\Debug\Garage.pdb
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\bin\Debug\Garage.exe.config
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\bin\Debug\Garage.exe
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\bin\Debug\Garage.pdb
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.csprojResolveAssemblyReference.cache
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.Form1.resources
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.Form2.resources
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.Form3.resources
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.Form4.resources
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.Properties.Resources.resources
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.csproj.GenerateResource.Cache
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.exe
+D:\progetti c#\4°\Garagee\zampierigiacomo_C-_GarageXMLlog\Garage\Garage\obj\Debug\Garage.pdb
