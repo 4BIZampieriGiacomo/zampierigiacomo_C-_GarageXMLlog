@@ -39,6 +39,10 @@ namespace Garage
                 Point p = new Point(60, 20);
                 labelMess.Location = p;
                 this.Controls.Add(labelMess);
+                string tipo = "Cambio tariffe fallito";
+                //primi 3 valori non idonei
+                string azione = (int)numercTAuto.Value + "," + (int)numericTFurgoni.Value + "," + (int)numericTMoto.Value;
+                genitore.Garagee.AggiornaLog(tipo, azione);
             }
             else
             {

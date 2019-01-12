@@ -75,6 +75,10 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
+                    string tipo = "Entrata furgone fallito";
+                    //...,motivo errore,dati non idonei
+                    string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                 }
                 else
                 {
@@ -115,6 +119,10 @@ namespace Garage
                             labelMess.Location = p;
                             this.Controls.Add(labelMess);
                             finito = true;
+                            string tipo = "Entrata furgone fallito";
+                            //...,motivo errore,dati non idonei
+                            string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
+                            genitore.Garagee.AggiornaLog(tipo, azione);
                         }
                         else
                         {
@@ -128,6 +136,10 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
+                    string tipo = "Entrata moto fallito";
+                    //...,motivo errore,dati non idonei
+                    string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                 }
                 else
                 {
@@ -168,6 +180,10 @@ namespace Garage
                             labelMess.Location = p;
                             this.Controls.Add(labelMess);
                             finito = true;
+                            string tipo = "Entrata moto fallito";
+                            //...,motivo errore,dati non idonei
+                            string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
+                            genitore.Garagee.AggiornaLog(tipo, azione);
                         }
                         else
                         {
@@ -189,6 +205,10 @@ namespace Garage
                     if (genitore.Garagee.arrVeicoli[pos] == null)
                     {
                         CreaLabelCampi("non esiste alcun veicolo in quella posizione");
+                        string tipo = "Uscita veicolo fallito";
+                        //...,motivo errore,dati non idonei
+                        string azione = "Mancanza veicoli" + "," + (int)numericNumero.Value;
+                        genitore.Garagee.AggiornaLog(tipo, azione);
                     }
                     else
                     {
@@ -214,12 +234,21 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
+                    string tipo = "Ricerca veicolo fallito";
+                    //...,motivo errore,dati non idonei
+                    string azione = "Campi non idonei" + "," + textBoxTarga.Text;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                 }
                 else
                 {
                     string a = textBoxTarga.Text;
                     genitore.PosizioneDaCercare = genitore.Garagee.CercaVeicolo(a);
+                    //genitore.PosizioneDaCercare == -1 ? "" : "";
                     genitore.AggiornaMessaggio(2);
+                    string tipo = "Ricerca veicolo";
+                    //...,Ricerca veicolo,targa
+                    string azione = "Campi non idonei" + "," + textBoxTarga.Text;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                     this.Close();
                 }
             }
@@ -228,11 +257,19 @@ namespace Garage
                 if((int)numericNumero.Value > 59)
                 {
                     CreaLabelCampi("posto inesistente");
+                    string tipo = "Controllo posizione fallito";
+                    //...,motivo errore,dati non idonei
+                    string azione = "Campi non idonei" + "," + (int)numericNumero.Value;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                 }
                 else
                 {
                     genitore.PosizioneDaCercare = (int)numericNumero.Value;
                     genitore.AggiornaMessaggio(3);
+                    string tipo = "Controlla posto";
+                    //...,Controlla posto,posizione
+                    string azione = "Controlla posto" + "," + (int)numericNumero.Value;
+                    genitore.Garagee.AggiornaLog(tipo, azione);
                     this.Close();
                 }
             }

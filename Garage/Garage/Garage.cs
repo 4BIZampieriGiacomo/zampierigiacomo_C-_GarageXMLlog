@@ -147,6 +147,12 @@ namespace Garage
             int i = 0;
             while (!finito)
             {
+                if(i > 59)
+                {
+
+                    finito = true;
+                }
+
                 if (arrVeicoli[i] == null)
                 {
                     i++;
