@@ -152,8 +152,7 @@ namespace Garage
 
                     finito = true;
                 }
-
-                if (arrVeicoli[i] == null)
+                else if (arrVeicoli[i] == null)
                 {
                     i++;
                 }
@@ -211,6 +210,10 @@ namespace Garage
             XmlSerializer serializer = new XmlSerializer(typeof(Garage));
             serializer.Serialize(file, g);
             file.Close();
+            string tipoAzione = "Salvataggio";
+            string azione = "";
+            AggiornaLog(tipoAzione, azione);
+            File.Copy("log2.csv", "log.csv");
         }
 
         public void CaricaXML(Garage g1)
@@ -228,6 +231,10 @@ namespace Garage
                 nVeicoli = g.nVeicoli;
                 g1 = g;
                 file.Close();
+                string tipoAzione = "Apertura file";
+                string azione = "";
+                log = new StreamWriter("log.csv", append: false);
+                AggiornaLog(tipoAzione, azione);
             }
         }
 
@@ -250,6 +257,13 @@ namespace Garage
             string azioneEffettuata = azione;
             string lg = oraAzione + "," + tipoAzione + "," + azioneEffettuata;
             log.WriteLine(lg);
+        }
+
+        public void controllaPostoLog(Veicolo v, int posiz)
+        {
+            string tip = "Controlla posto";
+            string azione = posiz + "," + v == null ? "null" : (v is Auto ? "Auto" : (v is Furgone ? "Furgone" : (v is Moto? "Moto" : "null")));
+            AggiornaLog(tip, azione);
         }
 
         public void ChiudiLog()

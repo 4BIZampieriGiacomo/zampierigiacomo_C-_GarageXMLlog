@@ -136,6 +136,10 @@ namespace Garage
             if (Garagee.nVeicoli == 0)
             {
                 labelMessaggio.Text = "il parcheggio è vuoto";
+                string tipo = "Controlla posto";
+                //...,Controlla posto,posizione
+                string azione = "Parcheggio vuoto";
+                Garagee.AggiornaLog(tipo, azione);
             }
             else
             {
@@ -229,6 +233,7 @@ namespace Garage
                 if (Garagee.arrVeicoli[PosizioneDaCercare] == null)
                 {
                     descriz = "il posto è vuoto";
+                    Garagee.controllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
                 }
                 else
                 {
@@ -246,6 +251,7 @@ namespace Garage
                     {
                         descriz = "è presente un Moto con targa: \" " + Garagee.arrVeicoli[PosizioneDaCercare].Targa + " \"";
                     }
+                    Garagee.controllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
                 }
                 labelMessaggio.Text = descriz;
             }

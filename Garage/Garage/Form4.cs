@@ -243,11 +243,10 @@ namespace Garage
                 {
                     string a = textBoxTarga.Text;
                     genitore.PosizioneDaCercare = genitore.Garagee.CercaVeicolo(a);
-                    //genitore.PosizioneDaCercare == -1 ? "" : "";
                     genitore.AggiornaMessaggio(2);
                     string tipo = "Ricerca veicolo";
                     //...,Ricerca veicolo,targa
-                    string azione = "Campi non idonei" + "," + textBoxTarga.Text;
+                    string azione = textBoxTarga.Text + "," + genitore.PosizioneDaCercare;
                     genitore.Garagee.AggiornaLog(tipo, azione);
                     this.Close();
                 }
@@ -266,10 +265,6 @@ namespace Garage
                 {
                     genitore.PosizioneDaCercare = (int)numericNumero.Value;
                     genitore.AggiornaMessaggio(3);
-                    string tipo = "Controlla posto";
-                    //...,Controlla posto,posizione
-                    string azione = "Controlla posto" + "," + (int)numericNumero.Value;
-                    genitore.Garagee.AggiornaLog(tipo, azione);
                     this.Close();
                 }
             }
