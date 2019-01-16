@@ -213,7 +213,6 @@ namespace Garage
             string tipoAzione = "Salvataggio";
             string azione = "";
             AggiornaLog(tipoAzione, azione);
-            File.Copy("log2.csv", "log.csv");
         }
 
         public void CaricaXML(Garage g1)
@@ -233,7 +232,6 @@ namespace Garage
                 file.Close();
                 string tipoAzione = "Apertura file";
                 string azione = "";
-                log = new StreamWriter("log.csv", append: false);
                 AggiornaLog(tipoAzione, azione);
             }
         }
@@ -242,7 +240,7 @@ namespace Garage
         {
             if (File.Exists("log.csv"))
             {
-                log = new StreamWriter("log2.csv", append: false);
+                log = new StreamWriter("log.csv", append: true);
             }
             else
             {

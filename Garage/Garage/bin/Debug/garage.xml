@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Garage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <arrVeicoli>
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
+    <Veicolo xsi:nil="true" />
     <Veicolo xsi:type="Auto">
-      <Targa>a</Targa>
+      <Targa>b</Targa>
       <OraIngresso>1</OraIngresso>
-      <IsElettrica>true</IsElettrica>
+      <IsElettrica>false</IsElettrica>
+    </Veicolo>
+    <Veicolo xsi:type="Furgone">
+      <Targa>c</Targa>
+      <OraIngresso>1</OraIngresso>
+      <Lunghezza>1</Lunghezza>
+    </Veicolo>
+    <Veicolo xsi:type="Moto">
+      <Targa>d</Targa>
+      <OraIngresso>1</OraIngresso>
+      <Cilindrata>1</Cilindrata>
     </Veicolo>
     <Veicolo xsi:nil="true" />
     <Veicolo xsi:nil="true" />
@@ -53,21 +73,9 @@
     <Veicolo xsi:nil="true" />
     <Veicolo xsi:nil="true" />
     <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
-    <Veicolo xsi:nil="true" />
   </arrVeicoli>
-  <nVeicoli>1</nVeicoli>
-  <TariffaAuto>10</TariffaAuto>
-  <TariffaFurgoni>10</TariffaFurgoni>
-  <TariffaMoto>10</TariffaMoto>
+  <nVeicoli>5</nVeicoli>
+  <TariffaAuto>1</TariffaAuto>
+  <TariffaFurgoni>1</TariffaFurgoni>
+  <TariffaMoto>1</TariffaMoto>
 </Garage>

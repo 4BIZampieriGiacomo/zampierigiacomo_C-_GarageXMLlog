@@ -244,9 +244,9 @@ namespace Garage
                     string a = textBoxTarga.Text;
                     genitore.PosizioneDaCercare = genitore.Garagee.CercaVeicolo(a);
                     genitore.AggiornaMessaggio(2);
-                    string tipo = "Ricerca veicolo";
+                    string tipo = genitore.PosizioneDaCercare == -1 ? "Veicolo non trovato" : "Ricerca veicolo";
                     //...,Ricerca veicolo,targa
-                    string azione = textBoxTarga.Text + "," + genitore.PosizioneDaCercare;
+                    string azione = textBoxTarga.Text + "," + (genitore.PosizioneDaCercare == -1 ? "" : Convert.ToString(genitore.PosizioneDaCercare));
                     genitore.Garagee.AggiornaLog(tipo, azione);
                     this.Close();
                 }

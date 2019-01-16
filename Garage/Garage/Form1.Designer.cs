@@ -45,6 +45,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.butApri = new System.Windows.Forms.Button();
             this.butSalva = new System.Windows.Forms.Button();
+            this.Statistiche = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -263,12 +264,27 @@
             this.butSalva.UseVisualStyleBackColor = false;
             this.butSalva.Click += new System.EventHandler(this.button2_Click);
             // 
+            // Statistiche
+            // 
+            this.Statistiche.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Statistiche.Enabled = false;
+            this.Statistiche.Font = new System.Drawing.Font("Modern No. 20", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statistiche.ForeColor = System.Drawing.Color.White;
+            this.Statistiche.Location = new System.Drawing.Point(1043, 624);
+            this.Statistiche.Name = "Statistiche";
+            this.Statistiche.Size = new System.Drawing.Size(137, 50);
+            this.Statistiche.TabIndex = 32;
+            this.Statistiche.Text = "Statistiche";
+            this.Statistiche.UseVisualStyleBackColor = false;
+            this.Statistiche.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1632, 693);
+            this.Controls.Add(this.Statistiche);
             this.Controls.Add(this.butSalva);
             this.Controls.Add(this.butApri);
             this.Controls.Add(this.label4);
@@ -314,6 +330,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button butApri;
         private System.Windows.Forms.Button butSalva;
+        private System.Windows.Forms.Button Statistiche;
     }
 }
 

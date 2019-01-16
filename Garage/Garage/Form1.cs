@@ -26,6 +26,10 @@ namespace Garage
         {
             InitializeComponent();
             Garagee = new Garage();
+            Garagee.CreaLog();
+            string tipo = "Apertura programma";
+            string azione = "";
+            Garagee.AggiornaLog(tipo, azione);
             CreaGarage.Enabled = true;
             butEntraAuto.Enabled = false;
             butEntraFurgone.Enabled = false;
@@ -35,7 +39,6 @@ namespace Garage
             butControllaPosto.Enabled = false;
             butSalva.Enabled = false;
             lblPostiLiberi.Text = "Posti disponibili: 60";
-            Garagee.CreaLog();
         }
 
 
@@ -390,7 +393,15 @@ namespace Garage
         private void Chiusura(object sender, FormClosingEventArgs e)
         {
             //Alla chiusura del programma salva tutte le attività nel file log
+            string tipo = "Chiusura programma";
+            string azione = "";
+            Garagee.AggiornaLog(tipo, azione);
             Garagee.ChiudiLog();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
