@@ -16,14 +16,12 @@ namespace Garage
         public int TariffaAuto { get; set; }
         public int TariffaFurgoni { get; set; }
         public int TariffaMoto { get; set; }
-        [XmlIgnore]
-        public StreamWriter log;
+        public Log l = new Log();
 
         public Garage()
         {
             arrVeicoli = new Veicolo[60];
             nVeicoli = 0;
-            //log = new StreamWriter("log.csv", append: false);
         }
 
 
@@ -123,23 +121,6 @@ namespace Garage
             return soldiDaPagare;
         }
 
-
-
-        public int ContaFurgoni()
-        {
-            int nFurgoni = 0;
-
-            for (int i = 0; i < 60; i++)
-            {
-                if (arrVeicoli[i] is Furgone)
-                {
-                    nFurgoni++;
-                }
-            }
-            return nFurgoni;
-        }
-
-
         public int CercaVeicolo(string targa)
         {
             int posizione = -1;
@@ -212,7 +193,7 @@ namespace Garage
             file.Close();
             string tipoAzione = "Salvataggio";
             string azione = "";
-            AggiornaLog(tipoAzione, azione);
+            l.AggiornaLog(tipoAzione, azione);
         }
 
         public void CaricaXML(Garage g1)
@@ -232,41 +213,8 @@ namespace Garage
                 file.Close();
                 string tipoAzione = "Apertura file";
                 string azione = "";
-                AggiornaLog(tipoAzione, azione);
+                l.AggiornaLog(tipoAzione, azione);
             }
-        }
-
-        public void CreaLog()
-        {
-            if (File.Exists("log.csv"))
-            {
-                log = new StreamWriter("log.csv", append: true);
-            }
-            else
-            {
-                log = new StreamWriter("log.csv", append: false);
-            }
-        }
-
-        public void AggiornaLog(string tipo, string azione)
-        {
-            string oraAzione = Convert.ToString(DateTime.Now);
-            string tipoAzione = tipo;
-            string azioneEffettuata = azione;
-            string lg = oraAzione + "," + tipoAzione + "," + azioneEffettuata;
-            log.WriteLine(lg);
-        }
-
-        public void controllaPostoLog(Veicolo v, int posiz)
-        {
-            string tip = "Controlla posto";
-            string azione = posiz + "," + v == null ? "null" : (v is Auto ? "Auto" : (v is Furgone ? "Furgone" : (v is Moto? "Moto" : "null")));
-            AggiornaLog(tip, azione);
-        }
-
-        public void ChiudiLog()
-        {
-            log.Dispose();
         }
     }
 }

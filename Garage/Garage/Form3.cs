@@ -43,7 +43,7 @@ namespace Garage
                 string tipo = "Entrata auto fallito";
                 //...,motivo errore,dati non idonei
                 string azione = "Campi non idonei" + "," + (checkBoxIsElettrica.Checked == true ? "Elettrica" : "NonElettrica") + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                genitore.Garagee.AggiornaLog(tipo, azione);
+                genitore.lg.AggiornaLog(tipo, azione);
             }
             else
             {
@@ -70,7 +70,7 @@ namespace Garage
                         string tipoAzione = "Entrata auto";
                         //...,EntrataAuto,è/non è elettrica,targa,ora ingresso
                         string azione = (a.IsElettrica == true ? "Elettrica" : "NonElettrica") + "," + a.Targa + "," + a.OraIngresso;
-                        genitore.Garagee.AggiornaLog(tipoAzione, azione);
+                        genitore.lg.AggiornaLog(tipoAzione, azione);
                         this.Close();
                     }
                     else if (genitore.Garagee.arrVeicoli[i] == null)
@@ -94,7 +94,7 @@ namespace Garage
                         string tipo = "Entrata auto fallito";
                         //...,motivo errore,dati non idonei
                         string azione = "Targa non idonea" + "," + (checkBoxIsElettrica.Checked == true ? "Elettrica" : "NonElettrica") + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                        genitore.Garagee.AggiornaLog(tipo, azione);
+                        genitore.lg.AggiornaLog(tipo, azione);
                     }
                     else
                     {

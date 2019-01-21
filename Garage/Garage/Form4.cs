@@ -78,7 +78,7 @@ namespace Garage
                     string tipo = "Entrata furgone fallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                    genitore.Garagee.AggiornaLog(tipo, azione);
+                    genitore.lg.AggiornaLog(tipo, azione);
                 }
                 else
                 {
@@ -99,7 +99,7 @@ namespace Garage
                             string tipoAzione = "EntrataFurgone";
                             //...,EntrataFurgone,Lunghezza,targa,ora ingresso
                             string azione = f.Lunghezza + "," + f.Targa + "," + f.OraIngresso;
-                            genitore.Garagee.AggiornaLog(tipoAzione, azione);
+                            genitore.lg.AggiornaLog(tipoAzione, azione);
                             this.Close();                        }
                         else if (genitore.Garagee.arrVeicoli[i] == null)
                         {
@@ -122,7 +122,7 @@ namespace Garage
                             string tipo = "Entrata furgone fallito";
                             //...,motivo errore,dati non idonei
                             string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                            genitore.Garagee.AggiornaLog(tipo, azione);
+                            genitore.lg.AggiornaLog(tipo, azione);
                         }
                         else
                         {
@@ -139,7 +139,7 @@ namespace Garage
                     string tipo = "Entrata moto fallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                    genitore.Garagee.AggiornaLog(tipo, azione);
+                    genitore.lg.AggiornaLog(tipo, azione);
                 }
                 else
                 {
@@ -160,7 +160,7 @@ namespace Garage
                             string tipoAzione = "EntrataMoto";
                             //...,EntrataFurgone,Lunghezza,targa,ora ingresso
                             string azione = m.Cilindrata + "," + m.Targa + "," + m.OraIngresso;
-                            genitore.Garagee.AggiornaLog(tipoAzione, azione);
+                            genitore.lg.AggiornaLog(tipoAzione, azione);
                             this.Close();                        }
                         else if (genitore.Garagee.arrVeicoli[i] == null)
                         {
@@ -183,7 +183,7 @@ namespace Garage
                             string tipo = "Entrata moto fallito";
                             //...,motivo errore,dati non idonei
                             string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
-                            genitore.Garagee.AggiornaLog(tipo, azione);
+                            genitore.lg.AggiornaLog(tipo, azione);
                         }
                         else
                         {
@@ -208,7 +208,7 @@ namespace Garage
                         string tipo = "Uscita veicolo fallito";
                         //...,motivo errore,dati non idonei
                         string azione = "Mancanza veicoli" + "," + (int)numericNumero.Value;
-                        genitore.Garagee.AggiornaLog(tipo, azione);
+                        genitore.lg.AggiornaLog(tipo, azione);
                     }
                     else
                     {
@@ -224,7 +224,7 @@ namespace Garage
                         genitore.RimuoviImm(pos);
                         genitore.AggiornaMessaggio(1);
                         string azione =  spezzoneAzioneLog + "," + ora + "," + genitore.SoldiDaPagare;
-                        genitore.Garagee.AggiornaLog(tipoAzione, azione);
+                        genitore.lg.AggiornaLog(tipoAzione, azione);
                         this.Close();
                     }
                 }
@@ -237,7 +237,7 @@ namespace Garage
                     string tipo = "Ricerca veicolo fallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + textBoxTarga.Text;
-                    genitore.Garagee.AggiornaLog(tipo, azione);
+                    genitore.lg.AggiornaLog(tipo, azione);
                 }
                 else
                 {
@@ -247,7 +247,7 @@ namespace Garage
                     string tipo = genitore.PosizioneDaCercare == -1 ? "Veicolo non trovato" : "Ricerca veicolo";
                     //...,Ricerca veicolo,targa
                     string azione = textBoxTarga.Text + "," + (genitore.PosizioneDaCercare == -1 ? "" : Convert.ToString(genitore.PosizioneDaCercare));
-                    genitore.Garagee.AggiornaLog(tipo, azione);
+                    genitore.lg.AggiornaLog(tipo, azione);
                     this.Close();
                 }
             }
@@ -259,7 +259,7 @@ namespace Garage
                     string tipo = "Controllo posizione fallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value;
-                    genitore.Garagee.AggiornaLog(tipo, azione);
+                    genitore.lg.AggiornaLog(tipo, azione);
                 }
                 else
                 {

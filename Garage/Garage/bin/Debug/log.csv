@@ -1,4 +1,4 @@
-16/01/2019 11:31:23,Apertura programma,
+16/01/2019 11:31:23,Apertura programma
 16/01/2019 11:32:11,Cambio tariffe,0,0,0,10,10,10
 16/01/2019 11:32:14,Cambio tariffe fallito,0,0,0
 16/01/2019 11:32:19,Cambio tariffe,10,10,10,1,1,1
@@ -15,19 +15,60 @@
 16/01/2019 11:33:45,Ricerca veicolo,c,11
 16/01/2019 11:33:49,Controlla posto,null
 16/01/2019 11:33:58,Controlla posto,Auto
-16/01/2019 11:34:03,Salvataggio,
-16/01/2019 11:34:06,Chiusura programma,
-16/01/2019 11:34:23,Apertura programma,
-16/01/2019 11:34:32,Apertura file,
-16/01/2019 11:34:34,Chiusura programma,
-16/01/2019 11:34:36,Apertura programma,
+16/01/2019 11:34:03,Salvataggio
+16/01/2019 11:34:06,Chiusura programma
+16/01/2019 11:34:23,Apertura programma
+16/01/2019 11:34:32,Apertura file
+16/01/2019 11:34:34,Chiusura programma
+16/01/2019 11:34:36,Apertura programma
 16/01/2019 11:39:57,Cambio tariffe,0,0,0,10,10,10
 16/01/2019 11:40:11,Entrata auto,Elettrica,a,1
-16/01/2019 11:40:15,Veicolo non trovato,b,
-16/01/2019 11:40:17,Chiusura programma,
-16/01/2019 11:42:23,Apertura programma,
-16/01/2019 11:42:24,Chiusura programma,
-16/01/2019 11:50:16,Apertura programma,
-16/01/2019 11:50:39,Chiusura programma,
-16/01/2019 11:51:05,Apertura programma,
-16/01/2019 11:51:07,Chiusura programma,
+16/01/2019 11:40:15,Veicolo non trovato,b
+16/01/2019 11:40:17,Chiusura programma
+16/01/2019 11:42:23,Apertura programma
+16/01/2019 11:42:24,Chiusura programma
+16/01/2019 11:50:16,Apertura programma
+16/01/2019 11:50:39,Chiusura programma
+16/01/2019 11:51:05,Apertura programma
+16/01/2019 11:51:07,Chiusura programma
+21/01/2019 10:17:57,Apertura programma
+21/01/2019 10:18:00,Chiusura programma
+21/01/2019 10:27:49,Apertura programma
+21/01/2019 10:27:53,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 10:27:56,Cambio tariffe fallito,0,0,0
+21/01/2019 10:27:59,Cambio tariffe,10,10,10,1,1,1
+21/01/2019 10:28:04,Entrata auto,Elettrica,a,1
+21/01/2019 10:28:07,Chiusura programma
+21/01/2019 10:33:27,Apertura programma
+21/01/2019 10:33:30,Cambio tariffe fallito,10,10,0
+21/01/2019 10:33:32,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 10:33:39,Entrata auto,Elettrica,a,1
+21/01/2019 10:33:41,Richiesta descrizione,0
+21/01/2019 10:33:43,Chiusura programma
+21/01/2019 10:55:21,Apertura programma
+21/01/2019 10:55:29,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 10:55:31,Chiusura programma
+21/01/2019 10:56:02,Apertura programma
+21/01/2019 10:56:06,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 10:56:12,Chiusura programma
+21/01/2019 10:56:23,Apertura programma
+21/01/2019 10:56:27,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 10:56:40,Chiusura programma
+21/01/2019 11:26:59,Apertura programma
+21/01/2019 11:27:04,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 11:27:09,Chiusura programma
+21/01/2019 11:27:54,Apertura programma
+21/01/2019 11:27:57,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 11:28:09,Chiusura programma
+21/01/2019 11:28:20,Apertura programma
+21/01/2019 11:28:25,Cambio tariffe,0,0,0,10,100,10
+21/01/2019 11:28:39,Chiusura programma
+21/01/2019 11:39:27,Apertura programma
+21/01/2019 11:39:30,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 11:39:40,Chiusura programma
+21/01/2019 11:44:43,Apertura programma
+21/01/2019 11:44:46,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 11:44:53,Chiusura programma
+21/01/2019 11:45:59,Apertura programma
+21/01/2019 11:46:02,Cambio tariffe,0,0,0,10,10,10
+21/01/2019 11:46:28,Chiusura programma

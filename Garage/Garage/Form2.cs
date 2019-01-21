@@ -42,7 +42,7 @@ namespace Garage
                 string tipo = "Cambio tariffe fallito";
                 //primi 3 valori non idonei
                 string azione = (int)numercTAuto.Value + "," + (int)numericTFurgoni.Value + "," + (int)numericTMoto.Value;
-                genitore.Garagee.AggiornaLog(tipo, azione);
+                genitore.lg.AggiornaLog(tipo, azione);
             }
             else
             {
@@ -57,7 +57,7 @@ namespace Garage
                 string tipo = "Cambio tariffe";
                 //primi 3 valori vecchi - ultimi 3 valori nuovi
                 string azione = oldTAuto + "," + oldTFurgoni + "," + oldMoto + "," + genitore.Garagee.TariffaAuto + "," + genitore.Garagee.TariffaFurgoni + "," + genitore.Garagee.TariffaMoto;
-                genitore.Garagee.AggiornaLog(tipo,azione);
+                genitore.lg.AggiornaLog(tipo,azione);
                 this.Close();
             }
         }

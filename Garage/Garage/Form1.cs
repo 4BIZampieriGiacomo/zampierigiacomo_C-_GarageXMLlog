@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Garage
 {
@@ -14,6 +16,7 @@ namespace Garage
     public partial class Form1 : Form
     {
         public Garage Garagee { get; set; }
+        public Log lg = new Log();
         public double SoldiDaPagare { get; set; }
         public int PosizioneDaCercare { get; set; }
 
@@ -26,10 +29,10 @@ namespace Garage
         {
             InitializeComponent();
             Garagee = new Garage();
-            Garagee.CreaLog();
+            lg.CreaLog();
             string tipo = "Apertura programma";
             string azione = "";
-            Garagee.AggiornaLog(tipo, azione);
+            lg.AggiornaLog(tipo, azione);
             CreaGarage.Enabled = true;
             butEntraAuto.Enabled = false;
             butEntraFurgone.Enabled = false;
@@ -142,7 +145,7 @@ namespace Garage
                 string tipo = "Controlla posto";
                 //...,Controlla posto,posizione
                 string azione = "Parcheggio vuoto";
-                Garagee.AggiornaLog(tipo, azione);
+                lg.AggiornaLog(tipo, azione);
             }
             else
             {
@@ -205,6 +208,19 @@ namespace Garage
             labelMessaggio.Text = "Il file è stato salvato";
         }
 
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5(this);
+            if (File.Exists("log.csv"))
+            {
+                f5.Show();
+            }
+            else
+            {
+                labelMessaggio.Text = "Non esiste il file log";
+            }
+        }
+
         public void AggiornaMessaggio(int tipo)
         {
             if (tipo == 0)//tariffe
@@ -236,7 +252,7 @@ namespace Garage
                 if (Garagee.arrVeicoli[PosizioneDaCercare] == null)
                 {
                     descriz = "il posto è vuoto";
-                    Garagee.controllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
+                    lg.ControllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
                 }
                 else
                 {
@@ -254,7 +270,7 @@ namespace Garage
                     {
                         descriz = "è presente un Moto con targa: \" " + Garagee.arrVeicoli[PosizioneDaCercare].Targa + " \"";
                     }
-                    Garagee.controllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
+                    lg.ControllaPostoLog(Garagee.arrVeicoli[PosizioneDaCercare], PosizioneDaCercare);
                 }
                 labelMessaggio.Text = descriz;
             }
@@ -287,6 +303,7 @@ namespace Garage
             butCercaVeicolo.Enabled = true;
             butControllaPosto.Enabled = true;
             butSalva.Enabled = true;
+            Statistiche.Enabled = true;
         }
 
         public void CreaImmagineVeicolo(int posiz, Image veicolo)
@@ -377,7 +394,6 @@ namespace Garage
                     pictureBox1.Controls.Remove(p);
                 }
             }
-
         }
 
         public void DammiDescrizione(int p)
@@ -388,6 +404,9 @@ namespace Garage
         public void daiDescrizione(object sender, EventArgs e)
         {
             DammiDescrizione((int)(((PictureBox)sender).Tag));
+            string type = "Richiesta descrizione";
+            string pos = Convert.ToString(((PictureBox)sender).Tag);
+            lg.AggiornaLog(type,pos);
         }
 
         private void Chiusura(object sender, FormClosingEventArgs e)
@@ -395,13 +414,8 @@ namespace Garage
             //Alla chiusura del programma salva tutte le attività nel file log
             string tipo = "Chiusura programma";
             string azione = "";
-            Garagee.AggiornaLog(tipo, azione);
-            Garagee.ChiudiLog();
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-
+            lg.AggiornaLog(tipo, azione);
+            lg.ChiudiLog();
         }
     }
 }
