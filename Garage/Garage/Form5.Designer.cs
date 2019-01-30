@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridLog = new System.Windows.Forms.DataGridView();
             this.TipoDati = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dati = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,9 +57,9 @@
             // 
             // TipoDati
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.TipoDati.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.TipoDati.DefaultCellStyle = dataGridViewCellStyle1;
             this.TipoDati.HeaderText = "Tipo";
             this.TipoDati.Name = "TipoDati";
             this.TipoDati.ReadOnly = true;

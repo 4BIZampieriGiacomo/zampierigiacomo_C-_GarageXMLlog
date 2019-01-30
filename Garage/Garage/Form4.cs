@@ -218,8 +218,8 @@ namespace Garage
                         string spezzoneAzioneLog = (
                             genitore.Garagee.arrVeicoli[pos] is Auto ? ("Auto" + (
                             (genitore.Garagee.arrVeicoli[pos] as Auto).IsElettrica == true ? "Elettrica" : "NonElettrica")) :
-                            genitore.Garagee.arrVeicoli[pos] is Furgone ? "Furgone" : "Moto" + "," + genitore.Garagee.arrVeicoli[pos].Targa + 
-                            "," + genitore.Garagee.arrVeicoli[pos].OraIngresso);
+                            genitore.Garagee.arrVeicoli[pos] is Furgone ? "Furgone" : "Moto" ) + "," + genitore.Garagee.arrVeicoli[pos].Targa + 
+                            "," + genitore.Garagee.arrVeicoli[pos].OraIngresso;
                         genitore.SoldiDaPagare = genitore.Garagee.EsceVeicolo(pos, ora);
                         string azione = spezzoneAzioneLog + "," + ora + "," + genitore.SoldiDaPagare;
                         genitore.lg.AggiornaLog(tipoAzione, azione);

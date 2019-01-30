@@ -200,13 +200,18 @@ namespace Garage
                     }
                 }
             }
+            string tipoAzione = "Salvataggio";
+            string azione = "";
+            lg.AggiornaLog(tipoAzione, azione);
         }
 
         public void button2_Click(object sender, EventArgs e)
         {
-
             Garagee.SalvaXML(Garagee);
             labelMessaggio.Text = "Il file è stato salvato";
+            string tipoAzione = "AperturaFile";
+            string azione = "";
+            lg.AggiornaLog(tipoAzione, azione);
         }
 
         private void button1_Click_2(object sender, EventArgs e)

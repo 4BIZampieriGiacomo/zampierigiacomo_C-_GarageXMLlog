@@ -16,7 +16,7 @@ namespace Garage
         public int nMotoTot = 0;
 
         public int tVeicoloMedio = 0;
-        public int tVeicoloToto = 0;
+        public int tVeicoloTot = 0;
 
         public int tAutoMedio = 0;
         public int tAutoTot = 0;
@@ -87,24 +87,111 @@ namespace Garage
 
                     if (parts[i] == "UscitaVeicolo")
                     {
-                        if(parts[i+1] == "Auto")
+                        if(parts[i + 1].Substring(0,4) == "Auto")
                         {
-                            tAutoTot++;
+                            int n1 = Convert.ToInt32(parts[4]);
+                            int n2 = Convert.ToInt32(parts[5]);
+
+                            if (n1 == 0 && n2 == 0)
+                            {
+                                tAutoTot = tAutoTot + 24;
+                            }
+                            else if ( n1 < n2 )
+                            {
+                                int a = n1;
+                                n1 = n2;
+                                n2 = a;
+                                tAutoTot = tAutoTot + (n1 - n2);
+                            }
+                            else
+                            {
+                                tAutoTot = tAutoTot + (n1 - n2);
+                            }
                         }
 
                         if (parts[i + 1] == "Furgone")
                         {
-                            tFurgoneTot++;
+                            int n1 = Convert.ToInt32(parts[4]);
+                            int n2 = Convert.ToInt32(parts[5]);
+
+                            if (n1 == 0 && n2 == 0)
+                            {
+                                tFurgoneTot = tFurgoneTot + 24;
+                            }
+                            else if (n1 < n2)
+                            {
+                                int a = n1;
+                                n1 = n2;
+                                n2 = a;
+                                tFurgoneTot = tFurgoneTot + (n1 - n2);
+                            }
+                            else
+                            {
+                                tFurgoneTot = tFurgoneTot + (n1 - n2);
+                            }
                         }
 
                         if (parts[i + 1] == "Moto")
                         {
-                            tMotoTot++;
+                            int n1 = Convert.ToInt32(parts[4]);
+                            int n2 = Convert.ToInt32(parts[5]);
+
+                            if (n1 == 0 && n2 == 0)
+                            {
+                                tMotoTot = tMotoTot + 24;
+                            }
+                            else if (n1 < n2)
+                            {
+                                int a = n1;
+                                n1 = n2;
+                                n2 = a;
+                                tMotoTot = tMotoTot + (n1 - n2);
+                            }
+                            else
+                            {
+                                tMotoTot = tMotoTot + (n1 - n2);
+                            }
                         }
                     }
                 }
             }
 
+            if (nAutoTot == 0)
+            {
+                tAutoMedio = 0;
+            }
+            else
+            {
+                tAutoMedio = tAutoTot / nAutoTot;
+            }
+
+            if (nFurgoniTot == 0)
+            {
+                tFurgoniMedio = 0;
+            }
+            else
+            {
+                tFurgoniMedio = tFurgoneTot / nFurgoniTot;
+            }
+
+            if (nMotoTot == 0)
+            {
+                tMotoMedio = 0;
+            }
+            else
+            {
+                tMotoMedio = tMotoTot / nMotoTot;
+            }
+
+            if (nVeicoliTot == 0)
+            {
+                tVeicoloMedio = 0;
+            }
+            else
+            {
+                tVeicoloTot = tAutoTot + tFurgoneTot + tMotoTot;
+                tVeicoloMedio = tVeicoloTot / nVeicoliTot;
+            }
         }
     }
 }

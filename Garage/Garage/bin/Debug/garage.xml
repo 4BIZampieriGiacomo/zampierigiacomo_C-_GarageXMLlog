@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Garage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <l>
+    <nVeicoliTot>0</nVeicoliTot>
+    <nAutoTot>0</nAutoTot>
+    <nFurgoniTot>0</nFurgoniTot>
+    <nMotoTot>0</nMotoTot>
+    <tVeicoloMedio>0</tVeicoloMedio>
+    <tVeicoloTot>0</tVeicoloTot>
+    <tAutoMedio>0</tAutoMedio>
+    <tAutoTot>0</tAutoTot>
+    <tFurgoniMedio>0</tFurgoniMedio>
+    <tFurgoneTot>0</tFurgoneTot>
+    <tMotoMedio>0</tMotoMedio>
+    <tMotoTot>0</tMotoTot>
+  </l>
   <arrVeicoli>
     <Veicolo xsi:nil="true" />
     <Veicolo xsi:nil="true" />

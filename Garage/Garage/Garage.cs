@@ -191,9 +191,6 @@ namespace Garage
             XmlSerializer serializer = new XmlSerializer(typeof(Garage));
             serializer.Serialize(file, g);
             file.Close();
-            string tipoAzione = "Salvataggio";
-            string azione = "";
-            l.AggiornaLog(tipoAzione, azione);
         }
 
         public void CaricaXML(Garage g1)
@@ -211,9 +208,6 @@ namespace Garage
                 nVeicoli = g.nVeicoli;
                 g1 = g;
                 file.Close();
-                string tipoAzione = "AperturaFile";
-                string azione = "";
-                l.AggiornaLog(tipoAzione, azione);
             }
         }
     }
