@@ -29,8 +29,9 @@ namespace Garage
         {
             InitializeComponent();
             Garagee = new Garage();
+            lg.EstraiStringaDalLog();
             lg.CreaLog();
-            string tipo = "Apertura programma";
+            string tipo = "AperturaProgramma";
             string azione = "";
             lg.AggiornaLog(tipo, azione);
             CreaGarage.Enabled = true;
@@ -404,7 +405,7 @@ namespace Garage
         public void daiDescrizione(object sender, EventArgs e)
         {
             DammiDescrizione((int)(((PictureBox)sender).Tag));
-            string type = "Richiesta descrizione";
+            string type = "RichiestaDescrizione";
             string pos = Convert.ToString(((PictureBox)sender).Tag);
             lg.AggiornaLog(type,pos);
         }
@@ -412,7 +413,7 @@ namespace Garage
         private void Chiusura(object sender, FormClosingEventArgs e)
         {
             //Alla chiusura del programma salva tutte le attività nel file log
-            string tipo = "Chiusura programma";
+            string tipo = "ChiusuraProgramma";
             string azione = "";
             lg.AggiornaLog(tipo, azione);
             lg.ChiudiLog();

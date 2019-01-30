@@ -211,7 +211,7 @@ namespace Garage
                 nVeicoli = g.nVeicoli;
                 g1 = g;
                 file.Close();
-                string tipoAzione = "Apertura file";
+                string tipoAzione = "AperturaFile";
                 string azione = "";
                 l.AggiornaLog(tipoAzione, azione);
             }

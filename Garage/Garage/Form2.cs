@@ -39,7 +39,7 @@ namespace Garage
                 Point p = new Point(60, 20);
                 labelMess.Location = p;
                 this.Controls.Add(labelMess);
-                string tipo = "Cambio tariffe fallito";
+                string tipo = "CambioTariffeFallito";
                 //primi 3 valori non idonei
                 string azione = (int)numercTAuto.Value + "," + (int)numericTFurgoni.Value + "," + (int)numericTMoto.Value;
                 genitore.lg.AggiornaLog(tipo, azione);
@@ -54,7 +54,7 @@ namespace Garage
                 genitore.Garagee.TariffaMoto = (int)numericTMoto.Value;
                 genitore.AggiornaMessaggio(0);
                 genitore.AbilitaBottoni();
-                string tipo = "Cambio tariffe";
+                string tipo = "CambioTariffe";
                 //primi 3 valori vecchi - ultimi 3 valori nuovi
                 string azione = oldTAuto + "," + oldTFurgoni + "," + oldMoto + "," + genitore.Garagee.TariffaAuto + "," + genitore.Garagee.TariffaFurgoni + "," + genitore.Garagee.TariffaMoto;
                 genitore.lg.AggiornaLog(tipo,azione);

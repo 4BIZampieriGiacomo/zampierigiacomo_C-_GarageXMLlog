@@ -51,8 +51,9 @@
             this.dataGridLog.Location = new System.Drawing.Point(12, 12);
             this.dataGridLog.Name = "dataGridLog";
             this.dataGridLog.RowTemplate.Height = 24;
-            this.dataGridLog.Size = new System.Drawing.Size(919, 528);
+            this.dataGridLog.Size = new System.Drawing.Size(1266, 528);
             this.dataGridLog.TabIndex = 0;
+            this.dataGridLog.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLog_CellContentClick);
             // 
             // TipoDati
             // 
@@ -74,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(943, 552);
+            this.ClientSize = new System.Drawing.Size(1290, 552);
             this.Controls.Add(this.dataGridLog);
             this.Name = "Form5";
             this.Text = "Form5";

@@ -40,7 +40,7 @@ namespace Garage
                 Point p = new Point(30, 0);
                 labelMess.Location = p;
                 this.Controls.Add(labelMess);
-                string tipo = "Entrata auto fallito";
+                string tipo = "EntrataAutoFallito";
                 //...,motivo errore,dati non idonei
                 string azione = "Campi non idonei" + "," + (checkBoxIsElettrica.Checked == true ? "Elettrica" : "NonElettrica") + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
                 genitore.lg.AggiornaLog(tipo, azione);
@@ -67,7 +67,7 @@ namespace Garage
                         }
                         genitore.AggiornaMessaggio(4);
                         finito = true;
-                        string tipoAzione = "Entrata auto";
+                        string tipoAzione = "EntrataAuto";
                         //...,EntrataAuto,è/non è elettrica,targa,ora ingresso
                         string azione = (a.IsElettrica == true ? "Elettrica" : "NonElettrica") + "," + a.Targa + "," + a.OraIngresso;
                         genitore.lg.AggiornaLog(tipoAzione, azione);

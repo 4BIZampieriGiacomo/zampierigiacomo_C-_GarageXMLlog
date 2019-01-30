@@ -75,7 +75,7 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
-                    string tipo = "Entrata furgone fallito";
+                    string tipo = "EntrataFurgoneFallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
                     genitore.lg.AggiornaLog(tipo, azione);
@@ -119,7 +119,7 @@ namespace Garage
                             labelMess.Location = p;
                             this.Controls.Add(labelMess);
                             finito = true;
-                            string tipo = "Entrata furgone fallito";
+                            string tipo = "EntrataFurgoneFallito";
                             //...,motivo errore,dati non idonei
                             string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
                             genitore.lg.AggiornaLog(tipo, azione);
@@ -136,7 +136,7 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
-                    string tipo = "Entrata moto fallito";
+                    string tipo = "EntrataMotoFallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
                     genitore.lg.AggiornaLog(tipo, azione);
@@ -161,7 +161,8 @@ namespace Garage
                             //...,EntrataFurgone,Lunghezza,targa,ora ingresso
                             string azione = m.Cilindrata + "," + m.Targa + "," + m.OraIngresso;
                             genitore.lg.AggiornaLog(tipoAzione, azione);
-                            this.Close();                        }
+                            this.Close();
+                        }
                         else if (genitore.Garagee.arrVeicoli[i] == null)
                         {
                             i++;
@@ -180,7 +181,7 @@ namespace Garage
                             labelMess.Location = p;
                             this.Controls.Add(labelMess);
                             finito = true;
-                            string tipo = "Entrata moto fallito";
+                            string tipo = "EntrataMotoFallito";
                             //...,motivo errore,dati non idonei
                             string azione = "Targa non idonea" + "," + (int)numericNumero.Value + "," + textBoxTarga.Text + "," + (int)numericOra.Value;
                             genitore.lg.AggiornaLog(tipo, azione);
@@ -205,7 +206,7 @@ namespace Garage
                     if (genitore.Garagee.arrVeicoli[pos] == null)
                     {
                         CreaLabelCampi("non esiste alcun veicolo in quella posizione");
-                        string tipo = "Uscita veicolo fallito";
+                        string tipo = "UscitaVeicoloFallito";
                         //...,motivo errore,dati non idonei
                         string azione = "Mancanza veicoli" + "," + (int)numericNumero.Value;
                         genitore.lg.AggiornaLog(tipo, azione);
@@ -215,16 +216,16 @@ namespace Garage
                         string tipoAzione = "UscitaVeicolo";
                         //...,UscitaVeicolo,tipoVeicolo,targa,oraIngresso,oraUscita,soldiDaPagare
                         string spezzoneAzioneLog = (
-                            genitore.Garagee.arrVeicoli[pos] is Auto ? "Auto" + (
-                            (genitore.Garagee.arrVeicoli[pos] as Auto).IsElettrica == true ? "Elettrica" : "NonElettrica") :
-                            genitore.Garagee.arrVeicoli[pos] is Furgone ? "Furgone" : "Moto") + "," + genitore.Garagee.arrVeicoli[pos].Targa + 
-                            "," + genitore.Garagee.arrVeicoli[pos].OraIngresso;
+                            genitore.Garagee.arrVeicoli[pos] is Auto ? ("Auto" + (
+                            (genitore.Garagee.arrVeicoli[pos] as Auto).IsElettrica == true ? "Elettrica" : "NonElettrica")) :
+                            genitore.Garagee.arrVeicoli[pos] is Furgone ? "Furgone" : "Moto" + "," + genitore.Garagee.arrVeicoli[pos].Targa + 
+                            "," + genitore.Garagee.arrVeicoli[pos].OraIngresso);
                         genitore.SoldiDaPagare = genitore.Garagee.EsceVeicolo(pos, ora);
+                        string azione = spezzoneAzioneLog + "," + ora + "," + genitore.SoldiDaPagare;
+                        genitore.lg.AggiornaLog(tipoAzione, azione);
                         genitore.Garagee.nVeicoli--;
                         genitore.RimuoviImm(pos);
                         genitore.AggiornaMessaggio(1);
-                        string azione =  spezzoneAzioneLog + "," + ora + "," + genitore.SoldiDaPagare;
-                        genitore.lg.AggiornaLog(tipoAzione, azione);
                         this.Close();
                     }
                 }
@@ -234,7 +235,7 @@ namespace Garage
                 if (textBoxTarga.Text == "")
                 {
                     CreaLabelCampi("Non tutti i campi sono stati inseriti correttamente");
-                    string tipo = "Ricerca veicolo fallito";
+                    string tipo = "RicercaVeicoloFallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + textBoxTarga.Text;
                     genitore.lg.AggiornaLog(tipo, azione);
@@ -244,7 +245,7 @@ namespace Garage
                     string a = textBoxTarga.Text;
                     genitore.PosizioneDaCercare = genitore.Garagee.CercaVeicolo(a);
                     genitore.AggiornaMessaggio(2);
-                    string tipo = genitore.PosizioneDaCercare == -1 ? "Veicolo non trovato" : "Ricerca veicolo";
+                    string tipo = genitore.PosizioneDaCercare == -1 ? "VeicoloNonTrovato" : "RicercaVeicolo";
                     //...,Ricerca veicolo,targa
                     string azione = textBoxTarga.Text + "," + (genitore.PosizioneDaCercare == -1 ? "" : Convert.ToString(genitore.PosizioneDaCercare));
                     genitore.lg.AggiornaLog(tipo, azione);
@@ -256,7 +257,7 @@ namespace Garage
                 if((int)numericNumero.Value > 59)
                 {
                     CreaLabelCampi("posto inesistente");
-                    string tipo = "Controllo posizione fallito";
+                    string tipo = "ControlloPosizioneFallito";
                     //...,motivo errore,dati non idonei
                     string azione = "Campi non idonei" + "," + (int)numericNumero.Value;
                     genitore.lg.AggiornaLog(tipo, azione);
