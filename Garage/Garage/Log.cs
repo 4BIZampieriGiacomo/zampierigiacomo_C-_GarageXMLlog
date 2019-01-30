@@ -27,6 +27,9 @@ namespace Garage
         public int tMotoMedio = 0;
         public int tMotoTot = 0;
 
+        public int nAutoEl = 0;
+        public int nAutoNEl = 0;
+
         public void CreaLog()
         {
             if (File.Exists("log.csv"))
@@ -71,6 +74,15 @@ namespace Garage
                     if(parts[i] == "EntrataAuto")
                     {
                         nAutoTot++;
+                        if(parts[i + 1] == "Elettrica")
+                        {
+                            nAutoEl++;
+                        }
+
+                        if(parts[i + 1] == "NonElettrica")
+                        {
+                            nAutoNEl++;
+                        }
                     }
 
                     if(parts[i] == "EntrataFurgone")

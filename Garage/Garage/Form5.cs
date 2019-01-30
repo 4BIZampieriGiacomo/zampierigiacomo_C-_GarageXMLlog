@@ -52,5 +52,60 @@ namespace Garage
         {
 
         }
+
+        public void DisegnaGraficoATorta1()
+        {
+            float total = genitore.lg.nAutoEl + genitore.lg.nAutoNEl;
+            float d1 = (genitore.lg.nAutoEl / total) * 360;
+            float d2 = (genitore.lg.nAutoNEl / total) * 360;
+
+            Pen p = new Pen(Color.Black, 1);
+            Graphics g = pictureBox1.CreateGraphics();
+            Rectangle rect = new Rectangle(10, 10, 200, 200);
+
+            Brush brush1 = new SolidBrush(Color.Green);
+            Brush brush2 = new SolidBrush(Color.Red);
+            g.Clear(pictureBox1.BackColor);
+
+            g.DrawPie(p, rect, 0, d1);
+            g.FillPie(brush1, rect, 0, d1);
+            g.DrawPie(p, rect, d1, d2);
+            g.FillPie(brush2, rect, d1, d2);
+        }
+
+        public void DisegnaGraficoATorta2()
+        {
+            float total = genitore.lg.nAutoTot + genitore.lg.nFurgoniTot + genitore.lg.nMotoTot;
+            float d1 = (genitore.lg.nAutoTot / total) * 360;
+            float d2 = (genitore.lg.nFurgoniTot / total) * 360;
+            float d3 = (genitore.lg.nMotoTot / total) * 360;
+
+            Pen p = new Pen(Color.Black, 1);
+            Graphics g = pictureBox2.CreateGraphics();
+            Rectangle rect = new Rectangle(10, 10, 200, 200);
+
+            Brush brush1 = new SolidBrush(Color.Green);
+            Brush brush2 = new SolidBrush(Color.Red);
+            Brush brush3 = new SolidBrush(Color.Blue);
+            g.Clear(pictureBox2.BackColor);
+
+            g.DrawPie(p, rect, 0, d1);
+            g.FillPie(brush1, rect, 0, d1);
+            g.DrawPie(p, rect, d1, d2);
+            g.FillPie(brush2, rect, d1, d2);
+            g.DrawPie(p, rect, d1 + d2, d3);
+            g.FillPie(brush3, rect, d1 + d2, d3);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DisegnaGraficoATorta1();
+            DisegnaGraficoATorta2();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
